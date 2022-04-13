@@ -9,7 +9,14 @@ function add(n1: number, n2: number, showResult: boolean, phrase: string) {
 
 //important note: All types in TS (number, string etc) are ALWAYS lower case!
 
+//Type inference: TS tries to understand what type you have in a variable. I initialized a variable with a number so TS thinks it will always be a number.
+
 const number1 = 5; //same data type as e.g. 5.0
+// could write it as let number1: number = 5;  --- but that's not really good practices.
+
+//but this is good if you're declaring the variable but not defining it yet,
+//so TS know what type it's working  with
+let number3: number;
 const number2 = 2.8;
 const printResult = true;
 
