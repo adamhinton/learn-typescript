@@ -3,4 +3,4 @@ const person = {
   age: 30,
 };
 
-console.log(person.nickname);
+console.log(person);
