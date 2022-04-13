@@ -16,7 +16,9 @@ const number1 = 5; //same data type as e.g. 5.0
 
 //but this is good if you're declaring the variable but not defining it yet,
 //so TS know what type it's working  with
+//So, now I can't assign number3 to a string or anything, only to a number.
 let number3: number;
+number3 = 56;
 const number2 = 2.8;
 const printResult = true;
 
