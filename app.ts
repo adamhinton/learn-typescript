@@ -11,9 +11,9 @@
 // };
 
 enum Role {
-  "ADMIN",
-  "USER",
-  "READONLY",
+  ADMIN,
+  USER,
+  READONLY,
 }
 
 const person = {
