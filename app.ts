@@ -16,6 +16,11 @@ enum Role {
   READONLY = 7,
 }
 
+//TS will basically never yell at you when you use the any type.
+//I can store whatever I want here.
+//But it can be bad, avoid this.
+let myNewVar: any[];
+
 const person = {
   name: "Maximilian",
   age: 30,
