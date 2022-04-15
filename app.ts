@@ -1,7 +1,20 @@
+// const person = {
+//   name: "Max",
+//   age: 30,
+//   hobbies: ["sports"],
+// };
+
+enum Role {
+  ADMIN,
+  READ_ONLY,
+  AUTHOR,
+}
+
 const person = {
   name: "Max",
   age: 30,
   hobbies: ["sports"],
+  role: 0,
 };
 
 let favAct: string[];
