@@ -9,8 +9,16 @@ var add = function (n1, n2) {
 // };
 //now TS knows this should return a string. Would give an error if it were just return n1 + n2;
 //But it's best to let TS just infer the type unless you need to do otherwise.
-//void types:
+//VOID TYPES:
+//This return type is a void, it doesn't have a return statement.
+//should make return type void if a fxn returns undefined, like so:
 var printRes = function (num) {
     console.log("Result: " + num);
 };
+//this prints to the console. But if we console.logged this same statement it would return undefined because printRes doesn't return anything.
 printRes(add(5, 12));
+// FUNCTION TYPE
+//You can also declare a FUNCTION TYPE itself:
+var combineValues;
+combineValues = add;
+console.log(combineValues(8, 8));
