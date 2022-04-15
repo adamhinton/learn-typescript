@@ -2,7 +2,6 @@ const person = {
   name: "Max",
   age: 30,
   hobbies: ["sports"],
-  role: [number, string],
 };
 
 let favAct: string[];
@@ -12,3 +11,4 @@ for (const hobby of person.hobbies) {
 }
 
 //tuple: fixed length, fixed type
+//enum: automatically generated global constant identifiers
