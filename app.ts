@@ -10,12 +10,12 @@ const add = (n1: number, n2: number) => {
 //   return String(n1 + n2);
 // };
 //now TS knows this should return a string. Would give an error if it were just return n1 + n2;
-
 //But it's best to let TS just infer the type unless you need to do otherwise.
 
 //void types:
 //This return type is a void, it doesn't have a return statement.
-const printRes = (num: number) => {
+//should make return type void if a fxn returns undefined, like so:
+const printRes = (num: number): void => {
   console.log("Result: " + num);
 };
 
