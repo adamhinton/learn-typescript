@@ -23,6 +23,6 @@ printRes(add(5, 12));
 
 // FUNCTION TYPE
 //You can also declare a FUNCTION TYPE itself:
-let combineValues: function;
+let combineValues: Function;
 combineValues = add;
 console.log(combineValues(8, 8));
