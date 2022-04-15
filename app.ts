@@ -18,6 +18,7 @@ const add = (n1: number, n2: number) => {
 const printRes = (num: number): void => {
   console.log("Result: " + num);
 };
+
 //this prints to the console. But if we console.logged this same statement it would return undefined because printRes doesn't return anything.
 printRes(add(5, 12));
 
@@ -27,3 +28,17 @@ printRes(add(5, 12));
 let combineValues: (a: number, b: number) => number;
 combineValues = add;
 console.log(combineValues(8, 8));
+
+// example:
+const addAndHandle = (
+  n1: number,
+  n2: number,
+  cb: (num: number) => void
+): void => {
+  const result = n1 + n2;
+  cb(result);
+};
+
+addAndHandle(10, 20, (result) => {
+  console.log(result);
+});

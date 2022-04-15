@@ -18,7 +18,16 @@ var printRes = function (num) {
 //this prints to the console. But if we console.logged this same statement it would return undefined because printRes doesn't return anything.
 printRes(add(5, 12));
 // FUNCTION TYPE
+//Function types are types that desc a fxn and what's in it.
 //You can also declare a FUNCTION TYPE itself:
 var combineValues;
 combineValues = add;
 console.log(combineValues(8, 8));
+// example:
+var addAndHandle = function (n1, n2, cb) {
+    var result = n1 + n2;
+    cb(result);
+};
+addAndHandle(10, 20, function (result) {
+    console.log(result);
+});
