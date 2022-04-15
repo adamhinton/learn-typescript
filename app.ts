@@ -1,6 +1,7 @@
 const add = (
-  input1: number | string | boolean,
-  input2: number | string | boolean
+  input1: number | string,
+  input2: number | string,
+  resultConversion: string
 ) => {
   let result;
   if (typeof input1 === "number" && typeof input2 === "number") {
@@ -11,5 +12,6 @@ const add = (
   return result;
 };
 
-console.log(add("Max", "Anna"));
-console.log(add(434, 543));
+console.log(add("Max", "Anna", "as-text"));
+console.log(add(434, 543, "as-number"));
+console.log(add("456456", "832742", "as-number"));
