@@ -19,4 +19,5 @@ const printRes = (num: number) => {
   console.log("Result: " + num);
 };
 
+//this prints to the console. But if we console.logged this same statement it would return undefined because printRes doesn't return anything.
 printRes(add(5, 12));
