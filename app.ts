@@ -22,7 +22,8 @@ const printRes = (num: number): void => {
 printRes(add(5, 12));
 
 // FUNCTION TYPE
+//Function types are types that desc a fxn and what's in it.
 //You can also declare a FUNCTION TYPE itself:
-let combineValues: Function;
+let combineValues: (a: number, b: number) => number;
 combineValues = add;
 console.log(combineValues(8, 8));
