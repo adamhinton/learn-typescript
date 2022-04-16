@@ -42,3 +42,5 @@ const addAndHandle = (
 addAndHandle(10, 20, (result) => {
   console.log(result);
 });
+
+console.log("fjiadsofsdjio");
