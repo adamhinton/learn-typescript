@@ -10,3 +10,4 @@ userInput = "Max";
 // userName = userInput;
 
 //unknown is the better choice over 'any' if you don't know what you'll store in the variable, but you know what you'll want to do eventually with it.
+//you might have to do type checking to assign something to an unknown variable.
