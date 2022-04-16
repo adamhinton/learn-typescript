@@ -3,7 +3,10 @@ let userInput: unknown;
 userInput = 5;
 userInput = "Max";
 
-//unknown is different from any.
+//uUNKNOWN IS DIFFERENT FROM ANY
 //The below would return an error because type 'unknown' is not assignable to type 'string'
-let userName: string;
-userName = userInput;
+//if userInput were 'any' type this would work.
+// let userName: string;
+// userName = userInput;
+
+//unknown is the better choice over 'any' if you don't know what you'll store in the variable, but you know what you'll want to do eventually with it.
