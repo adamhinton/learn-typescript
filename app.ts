@@ -17,3 +17,12 @@ if (typeof userInput === "string") {
   userName = userInput;
 }
 //this works because now TS realizes that userInput is a string
+
+//NEVER types:
+//the below fxn never returns a return value. It's a never type.
+//The error crashes/cancels our script.
+//If you don't define this as never it'll actually be assumed as void by TS since never is a newer type.
+const generateError = (message: string, code: number): never => {
+  throw { message: message, errorCode: code };
+};
+generateError("An error occured!", 500);
