@@ -1,4 +1,5 @@
-var userInput;
+"use strict";
+let userInput;
 //can store any value in this without getting errors
 userInput = 5;
 userInput = "Max";
@@ -10,7 +11,7 @@ userInput = "Max";
 //unknown is the better choice over 'any' if you don't know what you'll store in the variable, but you know what you'll want to do eventually with it.
 //you might have to do type checking to assign something to an unknown variable.
 //frex:
-var userName;
+let userName;
 if (typeof userInput === "string") {
     userName = userInput;
 }
@@ -19,7 +20,7 @@ if (typeof userInput === "string") {
 //the below fxn never returns a return value. It's a never type.
 //The error crashes/cancels our script.
 //If you don't define this as never it'll actually be assumed as void by TS since never is a newer type.
-var generateError = function (message, code) {
+const generateError = (message, code) => {
     throw { message: message, errorCode: code };
 };
 generateError("An error occured!", 500);
