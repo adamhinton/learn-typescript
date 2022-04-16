@@ -11,3 +11,8 @@ userInput = "Max";
 
 //unknown is the better choice over 'any' if you don't know what you'll store in the variable, but you know what you'll want to do eventually with it.
 //you might have to do type checking to assign something to an unknown variable.
+//frex:
+if (typeof userInput === "string") {
+  userName = userInput;
+}
+//this works because now TS realizes that userInput is a string
