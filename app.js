@@ -23,4 +23,5 @@ if (typeof userInput === "string") {
 const generateError = (message, code) => {
     throw { message: message, errorCode: code };
 };
-generateError("An error occured!", 500);
+// generateError("An error occured!", 500);
+// console.log("fdijasofsdjio");
