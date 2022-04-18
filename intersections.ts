@@ -23,3 +23,7 @@ const el: ElevatedEmployee = {
 type Combinable = string | number;
 type Numeric = number | boolean;
 type Universal = Combinable & Numeric;
+
+const add = (a: Combinable, b: Combinable) => {
+  return a + b;
+};
