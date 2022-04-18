@@ -13,6 +13,14 @@ const add = (a, b) => {
     }
     return a + b;
 };
+//'privileges' in emp below is a nift way to access properties for type guards
 const printEmployeeInfo = (emp) => {
     console.log("emp.name:", emp.name);
+    if ("privileges" in emp) {
+        console.log("emp.privileges:", emp.privileges);
+    }
+    if ("startDate" in emp) {
+        console.log("emp.startDate:", emp.startDate);
+    }
 };
+printEmployeeInfo(el);

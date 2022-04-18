@@ -35,8 +35,15 @@ const add = (a: Combinable, b: Combinable) => {
 
 type UnknownEmployee = Employee | Admin;
 
+//'privileges' in emp below is a nift way to access properties for type guards
 const printEmployeeInfo = (emp: UnknownEmployee) => {
   console.log("emp.name:", emp.name);
-  if()
-  console.log("emp.privileges:", emp.privileges);
+  if ("privileges" in emp) {
+    console.log("emp.privileges:", emp.privileges);
+  }
+  if ("startDate" in emp) {
+    console.log("emp.startDate:", emp.startDate);
+  }
 };
+
+printEmployeeInfo(el);
