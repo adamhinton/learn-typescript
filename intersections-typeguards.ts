@@ -24,6 +24,8 @@ type Combinable = string | number;
 type Numeric = number | boolean;
 type Universal = Combinable & Numeric;
 
+//my first type guard:
+//I check here what type the arguments are and return something based on that
 const add = (a: Combinable, b: Combinable) => {
   if (typeof a === "string" || typeof b === "string") {
     return String(a) + String(b);
