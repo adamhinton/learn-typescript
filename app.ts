@@ -17,3 +17,8 @@ const el: ElevatedEmployee = {
   privileges: ["create-server"],
   startDate: new Date(),
 };
+
+//intersections are useful with objects but you can use them with any types:
+type Combinable = string | number;
+type Numeric = number | boolean;
+type Universal = Combinable & Numeric;
