@@ -9,6 +9,7 @@ type Employee = {
 };
 
 //You create an intersection type like so
+//This is a combination of the properties of Admin and Employee
 type ElevatedEmployee = Admin & Employee;
 
 //here we declare an ElevatedEmployee
