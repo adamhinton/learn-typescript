@@ -25,5 +25,8 @@ type Numeric = number | boolean;
 type Universal = Combinable & Numeric;
 
 const add = (a: Combinable, b: Combinable) => {
+  if (typeof a === "string" || typeof b === "string") {
+    return String(a) + String(b);
+  }
   return a + b;
 };
