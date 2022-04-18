@@ -32,3 +32,11 @@ const add = (a: Combinable, b: Combinable) => {
   }
   return a + b;
 };
+
+type UnknownEmployee = Employee | Admin;
+
+const printEmployeeInfo = (emp: UnknownEmployee) => {
+  console.log("emp.name:", emp.name);
+  if()
+  console.log("emp.privileges:", emp.privileges);
+};
