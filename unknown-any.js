@@ -13,7 +13,7 @@ userInput = "Max";
 //frex:
 let userName;
 if (typeof userInput === "string") {
-  userName = userInput;
+    userName = userInput;
 }
 //this works because now TS realizes that userInput is a string
 //NEVER types:
@@ -21,7 +21,7 @@ if (typeof userInput === "string") {
 //The error crashes/cancels our script.
 //If you don't define this as never it'll actually be assumed as void by TS since never is a newer type.
 const generateError = (message, code) => {
-  throw { message: message, errorCode: code };
+    throw { message: message, errorCode: code };
 };
 // generateError("An error occured!", 500);
 // console.log("fdijasofsdjio");
