@@ -69,9 +69,11 @@ const moveAnimal = (animal: Animal) => {
   switch (animal.type) {
     case "bird":
       speed = animal.flyingSpeed;
+      break;
 
     case "horse":
       speed = animal.runningSpeed;
+      break;
 
     default:
       null;
