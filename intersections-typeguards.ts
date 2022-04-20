@@ -49,10 +49,18 @@ const printEmployeeInfo = (emp: UnknownEmployee) => {
 printEmployeeInfo(el);
 
 //starting Discriminated Unions
+//we add a type key (or any other key) to each interface here,
+//then use a switch statement in moveAnimal function based on the interface's type
 interface Bird {
+  type: "bird";
   flyingSpeed: number;
 }
 
 interface Horse {
+  type: "horse";
   runningSpeed: number;
 }
+
+const moveAnimal = (animal: Animal) => {
+  console.log("Moving with speed:" + animal.flyingSpeed);
+};
