@@ -61,6 +61,20 @@ interface Horse {
   runningSpeed: number;
 }
 
+type Animal = Bird | Horse;
+
 const moveAnimal = (animal: Animal) => {
-  console.log("Moving with speed:" + animal.flyingSpeed);
+  // console.log("Moving with speed:" + animal.flyingSpeed);
+  let speed;
+  switch (animal.type) {
+    case "bird":
+      speed = animal.flyingSpeed;
+
+    case "horse":
+      speed = animal.runningSpeed;
+
+    default:
+      null;
+  }
+  console.log(`Moving at speed: ${speed}`);
 };

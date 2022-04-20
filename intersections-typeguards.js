@@ -24,3 +24,10 @@ const printEmployeeInfo = (emp) => {
     }
 };
 printEmployeeInfo(el);
+const moveAnimal = (animal) => {
+    // console.log("Moving with speed:" + animal.flyingSpeed);
+    switch (animal.type) {
+        case "bird":
+        case "horse":
+    }
+};
