@@ -47,3 +47,12 @@ const printEmployeeInfo = (emp: UnknownEmployee) => {
 };
 
 printEmployeeInfo(el);
+
+//starting Discriminated Unions
+interface Bird {
+  flyingSpeed: number;
+}
+
+interface Horse {
+  runningSpeed: number;
+}
