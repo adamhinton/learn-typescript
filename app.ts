@@ -1,5 +1,3 @@
-console.log("afjidoasfs");
-
 type Admin = {
   name: string;
   privileges: string[];
@@ -35,7 +33,9 @@ const add = (a: Combinable, b: Combinable) => {
   return a + b;
 };
 
-type UnknownEmployee = Employee | Admin;
+const result = add(1, 5);
+
+// type UnknownEmployee = Employee | Admin;
 
 // //'privileges' in emp below is a nift way to access properties for type guards
 // const printEmployeeInfo = (emp: UnknownEmployee) => {

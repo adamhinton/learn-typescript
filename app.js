@@ -1,5 +1,4 @@
 "use strict";
-console.log("afjidoasfs");
 //here we declare an ElevatedEmployee
 const el = {
     name: "Max",
@@ -14,6 +13,8 @@ const add = (a, b) => {
     }
     return a + b;
 };
+const result = add(1, 5);
+// type UnknownEmployee = Employee | Admin;
 // //'privileges' in emp below is a nift way to access properties for type guards
 // const printEmployeeInfo = (emp: UnknownEmployee) => {
 //   console.log("emp.name:", emp.name);
