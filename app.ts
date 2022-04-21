@@ -88,7 +88,8 @@ moveAnimal({ type: "bird", flyingSpeed: 50 });
 //TYPE CASTING:
 
 //type casting helps you tell TS that a value of a certain type when TS may not know
-//say you have a <p> with id message-paragraph and find that by id. TS doesn't know what kind of htmlElement that is. That's where typecasting comes in..
+//say you have a <p> with id message-paragraph and find that by id. TS doesn't know what kind of htmlElement that is. It could be null and that's an  That's where typecasting comes in.
+//here I'm making this an htmlinputelement and TS won't complain anymore
 
-const para = document.getElementById("paragraph-message");
+const para = <HTMLInputElement>document.getElementById("paragraph-message");
 para.value = "Hi there!";
