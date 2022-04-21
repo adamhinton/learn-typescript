@@ -93,3 +93,20 @@ moveAnimal({ type: "bird", flyingSpeed: 50 });
 
 const para = <HTMLInputElement>document.getElementById("paragraph-message");
 para.value = "Hi there!";
+
+//INDEX TYPES:
+//more flexible on properties they might hold
+//make these with square brackets like below
+interface ErrorContainer {
+  //{email: 'Not a valid email', username: 'Must start with a character'}
+
+  //here we don't know the exact property name, we just know every item must have a string property name and a string value
+  [prop: string]: string;
+  //here we declare another key value pair like normal
+  id: string;
+}
+
+const errorBag: ErrorContainer = {
+  email: "Not a valid email",
+  username: "Must start with a capital character!",
+};
