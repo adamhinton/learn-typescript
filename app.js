@@ -41,5 +41,3 @@ const moveAnimal = (animal) => {
 };
 
 moveAnimal({ type: "bird", flyingSpeed: 50 });
-
-//type casting helps you tell TS that a value of a certain type when TS may not know
