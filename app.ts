@@ -110,3 +110,6 @@ const errorBag: ErrorContainer = {
   email: "Not a valid email",
   username: "Must start with a capital character!",
 };
+
+//FUNCTION OVERLOADS:
+//Solves a problem where we might have multiple ways of calling a fxn or with different kinds of params.
