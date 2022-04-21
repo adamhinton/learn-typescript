@@ -7,13 +7,15 @@ const el = {
 };
 //my first type guard:
 //I check here what type the arguments are and return something based on that
+//FUNCTION OVERLOADS:
+//Solves a problem where we might have multiple ways of calling a fxn or with different kinds of params.
 const add = (a, b) => {
     if (typeof a === "string" || typeof b === "string") {
         return String(a) + String(b);
     }
     return a + b;
 };
-const result = add(1, 5);
+const result = add("Max", "scharz");
 // type UnknownEmployee = Employee | Admin;
 // //'privileges' in emp below is a nift way to access properties for type guards
 // const printEmployeeInfo = (emp: UnknownEmployee) => {
