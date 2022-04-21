@@ -37,79 +37,76 @@ const add = (a: Combinable, b: Combinable) => {
 
 type UnknownEmployee = Employee | Admin;
 
-//'privileges' in emp below is a nift way to access properties for type guards
-const printEmployeeInfo = (emp: UnknownEmployee) => {
-  console.log("emp.name:", emp.name);
-  if ("privileges" in emp) {
-    console.log("emp.privileges:", emp.privileges);
-  }
-  if ("startDate" in emp) {
-    console.log("emp.startDate:", emp.startDate);
-  }
-};
+// //'privileges' in emp below is a nift way to access properties for type guards
+// const printEmployeeInfo = (emp: UnknownEmployee) => {
+//   console.log("emp.name:", emp.name);
+//   if ("privileges" in emp) {
+//     console.log("emp.privileges:", emp.privileges);
+//   }
+//   if ("startDate" in emp) {
+//     console.log("emp.startDate:", emp.startDate);
+//   }
+// };
 
-printEmployeeInfo(el);
+// printEmployeeInfo(el);
 
-//starting Discriminated Unions
-//we add a type key (or any other key) to each interface here,
-//then use a switch statement in moveAnimal function based on the interface's type
-interface Bird {
-  type: "bird";
-  flyingSpeed: number;
-}
+// //starting Discriminated Unions
+// //we add a type key (or any other key) to each interface here,
+// //then use a switch statement in moveAnimal function based on the interface's type
+// interface Bird {
+//   type: "bird";
+//   flyingSpeed: number;
+// }
 
-interface Horse {
-  type: "horse";
-  runningSpeed: number;
-}
+// interface Horse {
+//   type: "horse";
+//   runningSpeed: number;
+// }
 
-type Animal = Bird | Horse;
+// type Animal = Bird | Horse;
 
-const moveAnimal = (animal: Animal) => {
-  // console.log("Moving with speed:" + animal.flyingSpeed);
-  let speed;
-  switch (animal.type) {
-    case "bird":
-      speed = animal.flyingSpeed;
-      break;
+// const moveAnimal = (animal: Animal) => {
+//   // console.log("Moving with speed:" + animal.flyingSpeed);
+//   let speed;
+//   switch (animal.type) {
+//     case "bird":
+//       speed = animal.flyingSpeed;
+//       break;
 
-    case "horse":
-      speed = animal.runningSpeed;
-      break;
+//     case "horse":
+//       speed = animal.runningSpeed;
+//       break;
 
-    default:
-      null;
-  }
-  console.log(`Moving at speed: ${speed}`);
-};
+//     default:
+//       null;
+//   }
+//   console.log(`Moving at speed: ${speed}`);
+// };
 
-moveAnimal({ type: "bird", flyingSpeed: 50 });
+// moveAnimal({ type: "bird", flyingSpeed: 50 });
 
-//TYPE CASTING:
+// //TYPE CASTING:
 
-//type casting helps you tell TS that a value of a certain type when TS may not know
-//say you have a <p> with id message-paragraph and find that by id. TS doesn't know what kind of htmlElement that is. It could be null and that's an  That's where typecasting comes in.
-//here I'm making this an htmlinputelement and TS won't complain anymore
+// //type casting helps you tell TS that a value of a certain type when TS may not know
+// //say you have a <p> with id message-paragraph and find that by id. TS doesn't know what kind of htmlElement that is. It could be null and that's an  That's where typecasting comes in.
+// //here I'm making this an htmlinputelement and TS won't complain anymore
 
-const para = <HTMLInputElement>document.getElementById("paragraph-message");
-para.value = "Hi there!";
+// const para = <HTMLInputElement>document.getElementById("paragraph-message");
+// para.value = "Hi there!";
 
-//INDEX TYPES:
-//more flexible on properties they might hold
-//make these with square brackets like below
-interface ErrorContainer {
-  //{email: 'Not a valid email', username: 'Must start with a character'}
+// //INDEX TYPES:
+// //more flexible on properties they might hold
+// //make these with square brackets like below
+// interface ErrorContainer {
+//   //{email: 'Not a valid email', username: 'Must start with a character'}
 
-  //here we don't know the exact property name, we just know every item must have a string property name and a string value
-  [prop: string]: string;
-  //here we declare another key value pair like normal
-  id: string;
-}
+//   //here we don't know the exact property name, we just know every item must have a string property name and a string value
+//   [prop: string]: string;
+//   //here we declare another key value pair like normal
+//   id: string;
+// }
 
-const errorBag: ErrorContainer = {
-  email: "Not a valid email",
-  username: "Must start with a capital character!",
-};
-
-//FUNCTION OVERLOADS:
-//Solves a problem where we might have multiple ways of calling a fxn or with different kinds of params.
+// const errorBag: ErrorContainer = {
+//   email: "Not a valid email",
+//   username: "Must start with a capital character!",
+// };
