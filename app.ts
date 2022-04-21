@@ -84,3 +84,11 @@ const moveAnimal = (animal: Animal) => {
 };
 
 moveAnimal({ type: "bird", flyingSpeed: 50 });
+
+//TYPE CASTING:
+
+//type casting helps you tell TS that a value of a certain type when TS may not know
+//say you have a <p> with id message-paragraph and find that by id. TS doesn't know what kind of htmlElement that is. That's where typecasting comes in..
+
+const para = document.getElementById("paragraph-message");
+para.value = "Hi there!";
