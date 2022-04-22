@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 //here we declare an ElevatedEmployee
 const el = {
     name: "Max",
@@ -27,6 +28,19 @@ const result = add("Max", "scharz");
 //     console.log("emp.startDate:", emp.startDate);
 //   }
 // };
+//OPTIONAL CHAINING:
+//checks if a value exists before proceeding with code.
+//Frex, consider I have the below object and I want to log the job.title property but it may or may not be defined. I check if it exists first then proceed with the c.log.
+const fetchedUserData = {
+    id: "ul",
+    name: "max",
+    job: {
+        title: "CEO",
+        description: "blah blah blah",
+    },
+};
+//This is my optional chaining:
+console.log((_a = fetchedUserData.job) === null || _a === void 0 ? void 0 : _a.title);
 // printEmployeeInfo(el);
 // //starting Discriminated Unions
 // //we add a type key (or any other key) to each interface here,
