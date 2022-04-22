@@ -53,6 +53,7 @@ const result = add("Max", "scharz");
 
 //OPTIONAL CHAINING:
 //checks if a value exists before proceeding with code.
+//Frex, consider I have the below object and I want to log the XXXX property but it may or may not be defined. I check if it exists first then proceed with the c.log.
 
 // printEmployeeInfo(el);
 
