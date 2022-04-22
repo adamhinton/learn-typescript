@@ -12,3 +12,8 @@ type Employee = {
 
 //Now we create our intersection of thes two:
 type ElevatedEmployee = Admin & Employee;
+const e1: ElevatedEmployee = {
+  name: "Max",
+  privileges: ["create-server"],
+  startDate: new Date(),
+};
