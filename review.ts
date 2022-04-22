@@ -17,3 +17,9 @@ const e1: ElevatedEmployee = {
   privileges: ["create-server"],
   startDate: new Date(),
 };
+
+console.log("e1:", e1);
+
+type Combinable = string | number;
+type Numeric = number | boolean;
+type Universal = Combinable & Numeric;
