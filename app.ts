@@ -51,6 +51,9 @@ const result = add("Max", "scharz");
 //   }
 // };
 
+//OPTIONAL CHAINING:
+//checks if a value exists before proceeding with code.
+
 // printEmployeeInfo(el);
 
 // //starting Discriminated Unions
