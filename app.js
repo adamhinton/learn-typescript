@@ -41,6 +41,8 @@ const fetchedUserData = {
 };
 //This is my optional chaining:
 console.log((_a = fetchedUserData.job) === null || _a === void 0 ? void 0 : _a.title);
+// NULLISH COALESCING:
+// TS has the nullish coalescing operator ?? . If the first item is null or undefined, proceed. If not, don't proceed.
 // printEmployeeInfo(el);
 // //starting Discriminated Unions
 // //we add a type key (or any other key) to each interface here,
