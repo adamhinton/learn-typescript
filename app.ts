@@ -67,6 +67,9 @@ console.log(fetchedUserData.job?.title);
 
 // NULLISH COALESCING:
 // TS has the nullish coalescing operator ?? . If the first item is null or undefined, proceed. If not, don't proceed.
+const userInput = undefined;
+const storedData = userInput ?? "DEFAULT";
+//Unlike in JS, storedData wouldn't be 'DEFAULT' if, say, userInput were an empty string or some other falsy value besides null/undefined.
 
 // printEmployeeInfo(el);
 
