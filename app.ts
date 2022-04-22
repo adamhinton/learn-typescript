@@ -65,6 +65,9 @@ const fetchedUserData = {
 //This is my optional chaining:
 console.log(fetchedUserData.job?.title);
 
+// NULLISH COALESCING:
+// TS has the nullish coalescing operator ?? . If the first item is null or undefined, proceed. If not, don't proceed.
+
 // printEmployeeInfo(el);
 
 // //starting Discriminated Unions
