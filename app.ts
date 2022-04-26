@@ -3,5 +3,7 @@
 
 const names: Array<string> = [];
 
-//now TS knows this is a string
-names[0];
+//now TS knows names[0] is a string
+names[0].split(" ");
+
+//The Promise type is another generic
