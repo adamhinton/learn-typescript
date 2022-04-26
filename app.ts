@@ -1,3 +1,5 @@
+//GENERICS:
+
 //arrays are a generic. They require a type argument of sorts.
 //they're connected with another type
 
@@ -22,3 +24,5 @@ function merge<T, U>(objA: T, objB: U) {
 }
 const mergedObj = merge({ name: "Max" }, { age: 30 });
 console.log(mergedObj.age);
+
+//CONSTRAINTS:
