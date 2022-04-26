@@ -16,6 +16,8 @@
 
 //Now to build our own generic types
 //This fxn returns intersection of T and U
+//This tells TS that T and U are different items so can be merged.
 function merge<T, U>(objA: T, objB: U) {
   return Object.assign(objA, objB);
 }
+const mergedObj = merge({ name: "Max" }, { age: 30 });
