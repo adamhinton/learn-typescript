@@ -35,3 +35,14 @@ function merge<T extends object, U extends object>(objA: T, objB: U) {
 }
 const mergedObj = merge({ name: "Max" }, { age: 30 });
 console.log(mergedObj.age);
+
+//more on generics:
+function countAndDescribe<T>(element: T) {
+  let descriptionText = "Got no value.";
+
+  if (element.length > 0) {
+    descriptionText = "Got" + element.length + "elements.";
+  }
+
+  return [element, descriptionText];
+}
