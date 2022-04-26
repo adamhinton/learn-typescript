@@ -7,6 +7,7 @@ const names: Array<string> = [];
 names[0].split(" ");
 
 //The Promise type is another generic
+//This promise eventually returns a string
 const promise: Promise<string> = new Promise((resolve, reject) => {
     setTimeout(() =>{
         resolve("this is done!");
