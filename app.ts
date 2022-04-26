@@ -15,4 +15,7 @@
 // });
 
 //Now to build our own generic types
-const merge = (objA, objB) => {};
+//This fxn returns intersection of T and U
+function merge<T, U>(objA: T, objB: U) {
+  return Object.assign(objA, objB);
+}
