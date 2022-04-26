@@ -15,3 +15,4 @@
 // });
 
 //Now to build our own generic types
+const merge = (objA, objB) => {};
