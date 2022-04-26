@@ -28,3 +28,9 @@
 //CONSTRAINTS:
 //Here we will do much the same as above, defining a generic merge() function that merges two objects
 //we take it a step further by adding constraints, telling TS that both parameters are objects
+//below we use the keyword extends to do this
+function merge<T extends object, U extends object>(objA: T, objB: U) {
+  return Object.assign(objA, objB);
+}
+const mergedObj = merge({ name: "Max" }, { age: 30 });
+console.log(mergedObj.age);
