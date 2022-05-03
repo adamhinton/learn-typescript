@@ -41,7 +41,7 @@ interface Lengthy {
 }
 
 //more on generics:
-function countAndDescribe<T extends Lengthy>(element: T) {
+function countAndDescribe<T extends Lengthy>(element: T): [T, string] {
   let descriptionText = "Got no value.";
 
   if (element.length > 0) {
@@ -50,3 +50,6 @@ function countAndDescribe<T extends Lengthy>(element: T) {
 
   return [element, descriptionText];
 }
+
+console.log(countAndDescribe("Hi there!"));
+console.log("blah blah blah");
