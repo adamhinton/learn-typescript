@@ -77,3 +77,12 @@
 // ) {
 //   return obj[key];
 // }
+
+// generic utility types only exist in TS world
+interface CourseGoal {
+  title: string;
+  description: string;
+  completeUnit: Date;
+}
+
+function createCourseGoal() {}
