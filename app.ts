@@ -99,3 +99,5 @@ function createCourseGoal(
 
   return courseGoal as CourseGoal;
 }
+
+const names = ["Max"];
