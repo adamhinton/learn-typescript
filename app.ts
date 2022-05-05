@@ -40,18 +40,33 @@ interface Lengthy {
   length: number;
 }
 
-//more on generics:
-function countAndDescribe<T extends Lengthy>(element: T): [T, string] {
-  let descriptionText = "Got no value.";
+// //more on generics:
+// function countAndDescribe<T extends Lengthy>(element: T): [T, string] {
+//   let descriptionText = "Got no value.";
 
-  if (element.length > 0) {
-    descriptionText = "Got" + element.length + "elements.";
-  }
+//   if (element.length > 0) {
+//     descriptionText = "Got" + element.length + "elements.";
+//   }
 
-  return [element, descriptionText];
-}
+//   return [element, descriptionText];
+// }
 
 // console.log(countAndDescribe("Hi there!"));
 // console.log("blah blah blah");
 
-function countAndPrint<t>(element: T) {}
+interface Lengthy {
+  length: number;
+}
+
+function countAndDescribe<T extends Lengthy>(element: T) {
+  let descriptionText = "Got no value.";
+
+  if (element.length > 0) {
+    descriptionText = "Got" + element.length + "elements.";
+  } else if (element.length > 1) {
+    descriptionText = "Got" + element.length + " elements.";
+  }
+  return [element, descriptionText];
+}
+
+console.log(countAndDescribe("Hi there."));
