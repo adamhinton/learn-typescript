@@ -56,6 +56,9 @@
 //   return [element, descriptionText];
 // }
 // console.log(countAndDescribe("Hi there.fdsafdsa"));
-function extractAndConvert(obj, key) {
-    return obj[key];
-}
+// function extractAndConvert<T extends object, U extends keyof T>(
+//   obj: T,
+//   key: U
+// ) {
+//   return obj[key];
+// }
