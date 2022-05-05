@@ -56,3 +56,6 @@
 //   return [element, descriptionText];
 // }
 // console.log(countAndDescribe("Hi there.fdsafdsa"));
+function extractAndConvert(obj, key) {
+    return obj[key];
+}
