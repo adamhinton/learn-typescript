@@ -100,4 +100,6 @@ function createCourseGoal(
   return courseGoal as CourseGoal;
 }
 
-const names = ["Max"];
+//Say we have this array and want to make it readonly. You can't push to it.
+const names: Readonly<string[]> = ["Max", "Anna"];
+names.push("Manu");
