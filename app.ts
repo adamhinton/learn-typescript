@@ -82,7 +82,13 @@
 interface CourseGoal {
   title: string;
   description: string;
-  completeUnit: Date;
+  completeUntil: Date;
 }
 
-function createCourseGoal() {}
+function createCourseGoal(
+  title: string,
+  description: string,
+  date: Date
+): CourseGoal {
+  let courseGoal: Partial<CourseGoal> = {};
+}
