@@ -1,3 +1,3 @@
 "use strict";
 //GENERICS:
-function createCourseGoal() { }
+function createCourseGoal(title, description, date) { }

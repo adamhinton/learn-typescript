@@ -79,6 +79,8 @@
 // }
 
 // generic utility types only exist in TS world
+
+// Partial makes the listed properties optional
 interface CourseGoal {
   title: string;
   description: string;
@@ -91,4 +93,9 @@ function createCourseGoal(
   date: Date
 ): CourseGoal {
   let courseGoal: Partial<CourseGoal> = {};
+  courseGoal.title = title;
+  courseGoal.description = description;
+  courseGoal.completeUntil = date;
+
+  return courseGoal;
 }
