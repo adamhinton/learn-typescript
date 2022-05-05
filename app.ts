@@ -30,15 +30,15 @@
 //we take it a step further by adding constraints, telling TS that both parameters are objects
 //below we use the keyword extends to do this
 //Can use whatever constraint we want, even custom types or any.
-function merge<T extends object, U extends object>(objA: T, objB: U) {
-  return Object.assign(objA, objB);
-}
-const mergedObj = merge({ name: "Max" }, { age: 30 });
-console.log(mergedObj.age);
+// function merge<T extends object, U extends object>(objA: T, objB: U) {
+//   return Object.assign(objA, objB);
+// }
+// const mergedObj = merge({ name: "Max" }, { age: 30 });
+// console.log(mergedObj.age);
 
-interface Lengthy {
-  length: number;
-}
+// interface Lengthy {
+//   length: number;
+// }
 
 // //more on generics:
 // function countAndDescribe<T extends Lengthy>(element: T): [T, string] {

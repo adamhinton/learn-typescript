@@ -29,14 +29,6 @@ function merge(objA, objB) {
 }
 var mergedObj = merge({ name: "Max" }, { age: 30 });
 console.log(mergedObj.age);
-//more on generics:
-function countAndDescribe(element) {
-    var descriptionText = "Got no value.";
-    if (element.length > 0) {
-        descriptionText = "Got" + element.length + "elements.";
-    }
-    return [element, descriptionText];
-}
 function countAndDescribe(element) {
     var descriptionText = "Got no value.";
     if (element.length > 0) {
