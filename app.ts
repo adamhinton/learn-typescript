@@ -97,5 +97,5 @@ function createCourseGoal(
   courseGoal.description = description;
   courseGoal.completeUntil = date;
 
-  return courseGoal;
+  return courseGoal as CourseGoal;
 }
