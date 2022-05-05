@@ -104,6 +104,4 @@ function createCourseGoal(
 const names: Readonly<string[]> = ["Max", "Anna"];
 //now I can't push to names, the below would return an error
 // names.push("Manu");
-console.log("names:", names);
-
-console.log("blah blah blah");
+// names.pop();
