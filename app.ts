@@ -53,3 +53,5 @@ function countAndDescribe<T extends Lengthy>(element: T): [T, string] {
 
 // console.log(countAndDescribe("Hi there!"));
 // console.log("blah blah blah");
+
+function countAndPrint<t>(element: T) {}
