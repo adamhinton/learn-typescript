@@ -1,6 +1,7 @@
+"use strict";
 //GENERICS:
 function countAndDescribe(element) {
-    var descriptionText = "Got no value.";
+    let descriptionText = "Got no value.";
     if (element.length > 0) {
         descriptionText = "Got" + element.length + "elements.";
     }
@@ -9,4 +10,4 @@ function countAndDescribe(element) {
     }
     return [element, descriptionText];
 }
-console.log(countAndDescribe("Hi there."));
+console.log(countAndDescribe("Hi there.fdsafdsa"));
