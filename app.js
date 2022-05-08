@@ -90,3 +90,7 @@
 // private data: (string[] | number[] | boolean[]) = [];
 //This means it can be any mix of the three types above
 // Generic types lock in a type, union types make your type flexible
+// DECORATORS:
+// These have to do with meta-programming.
+// Useful for making your code easier to use for other devs.
+//For instance, guaranteeing a method or class gets used directly.
