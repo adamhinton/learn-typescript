@@ -12,3 +12,7 @@ const names = ["Max", "Anna"];
 //now I can't push to names, the below would return an error
 // names.push("Manu");
 // names.pop();
+// Diff bw generic and union types:
+//A union type is a mix of the suggested types. Like:
+// private data: (string | number | boolean[]) = [];
+//This means it can be any mix of the three types above
