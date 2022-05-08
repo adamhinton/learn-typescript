@@ -108,5 +108,6 @@ const names: Readonly<string[]> = ["Max", "Anna"];
 
 // Diff bw generic and union types:
 //A union type is a mix of the suggested types. Like:
-// private data: (string | number | boolean[]) = [];
+// private data: (string[] | number[] | boolean[]) = [];
 //This means it can be any mix of the three types above
+// Generic types lock in a type, union types make your type flexible
