@@ -81,27 +81,27 @@
 // generic utility types only exist in TS world
 
 // Partial makes the listed properties optional
-interface CourseGoal {
-  title: string;
-  description: string;
-  completeUntil: Date;
-}
+// interface CourseGoal {
+//   title: string;
+//   description: string;
+//   completeUntil: Date;
+// }
 
-function createCourseGoal(
-  title: string,
-  description: string,
-  date: Date
-): CourseGoal {
-  let courseGoal: Partial<CourseGoal> = {};
-  courseGoal.title = title;
-  courseGoal.description = description;
-  courseGoal.completeUntil = date;
+// function createCourseGoal(
+//   title: string,
+//   description: string,
+//   date: Date
+// ): CourseGoal {
+//   let courseGoal: Partial<CourseGoal> = {};
+//   courseGoal.title = title;
+//   courseGoal.description = description;
+//   courseGoal.completeUntil = date;
 
-  return courseGoal as CourseGoal;
-}
+//   return courseGoal as CourseGoal;
+// }
 
 //Say we have this array and want to make it readonly. You can't push to it.
-const names: Readonly<string[]> = ["Max", "Anna"];
+// const names: Readonly<string[]> = ["Max", "Anna"];
 //now I can't push to names, the below would return an error
 // names.push("Manu");
 // names.pop();
